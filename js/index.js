@@ -28,7 +28,7 @@ function mensajeInicial(){
     console.log("2 #65 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
     console.log("3 Termo Protector Capilar 250ml Precio: $13.990");
     console.log("4 #60 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
-    console.log(" ");    
+    console.log("");    
 }
 
 function productosSeleccionados() {
