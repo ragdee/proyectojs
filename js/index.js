@@ -143,50 +143,53 @@ function modificarProducto() {
 
 mensajeInicial();
 
+function comprar(){
 
-let casoSwitch = "";
 
-while (true) {
-    casoSwitch = prompt("Si desea agregar un producto, Ingrese una Opcion (1-4) (0 para modificar) (x para Finalizar)");
+    let casoSwitch = "";
 
-    if (casoSwitch == "x") {
-        console.log("Total a pagar: $" + calcularTotal());
-        console.log("Gracias por su compra. ¡Hasta luego!");
-        break;
-    } else if (casoSwitch == 0) {
-        if (hayProductosSeleccionados()) {
-            modificarProducto(); 
+    while (true) {
+        casoSwitch = prompt("Si desea agregar un producto, Ingrese una Opcion (1-4) (0 para modificar) (x para Finalizar)");
+
+        if (casoSwitch == "x") {
+            console.log("Total a pagar: $" + calcularTotal());
+            console.log("Gracias por su compra. ¡Hasta luego!");
+            break;
+        } else if (casoSwitch == 0) {
+            if (hayProductosSeleccionados()) {
+                modificarProducto(); 
+            } else {
+                alert("No hay productos en el carrito para modificar.");
+            }
         } else {
-            alert("No hay productos en el carrito para modificar.");
-        }
-    } else {
-        switch (parseInt(casoSwitch)) {
-            case 1:
-                alert("Luxury Shampoo & Acondicionador Kit Precio: $19.900");
-                cantidadProducto1 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO1+" desea agregar?"));
-                seleccion1 = true;
-                productosSeleccionados();                
-                break;
-            case 2:
-                alert("#65 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
-                cantidadProducto2 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO2+" desea agregar?"));
-                seleccion2 = true;
-                productosSeleccionados();                
-                break;
-            case 3:
-                alert("Termo Protector Capilar 250ml Precio: $13.990");
-                cantidadProducto3 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO3+" desea agregar?"));
-                seleccion3 = true;
-                productosSeleccionados();                
-                break;
-            case 4:
-                alert("#60 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
-                cantidadProducto4 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO4+" desea agregar?"));
-                seleccion4 = true;
-                productosSeleccionados();                
-                break;
-            default:
-                alert("Opción no válida. Por favor, ingrese un número entre 1 y 4, o x para Finalizar.");0
+            switch (parseInt(casoSwitch)) {
+                case 1:
+                    alert("Luxury Shampoo & Acondicionador Kit Precio: $19.900");
+                    cantidadProducto1 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO1+" desea agregar?"));
+                    seleccion1 = true;
+                    productosSeleccionados();                
+                    break;
+                case 2:
+                    alert("#65 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
+                    cantidadProducto2 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO2+" desea agregar?"));
+                    seleccion2 = true;
+                    productosSeleccionados();                
+                    break;
+                case 3:
+                    alert("Termo Protector Capilar 250ml Precio: $13.990");
+                    cantidadProducto3 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO3+" desea agregar?"));
+                    seleccion3 = true;
+                    productosSeleccionados();                
+                    break;
+                case 4:
+                    alert("#60 Extensiones Coletas Pony Tail 64 Cm Precio: $159.990");
+                    cantidadProducto4 = parseInt(prompt("¿Cuántos "+NOMBREPRODUCTO4+" desea agregar?"));
+                    seleccion4 = true;
+                    productosSeleccionados();                
+                    break;
+                default:
+                    alert("Opción no válida. Por favor, ingrese un número entre 1 y 4, o x para Finalizar.");0
+            }
         }
     }
 }
