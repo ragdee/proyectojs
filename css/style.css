@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sen:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div{
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+
+header div a img{
+    height: 100px;
+    flex: 0 0 20%;
+}
+header div ul{
+    flex: 1 0 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;   
+    font-family: "Sen", sans-serif;
+    margin: 1rem;
+    gap: 1rem;  
+}
+header div ul a{
+    text-decoration: none;
+    color: black;   
+}
+
+.banner{
+    width: 100%;    
+}
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+h5{
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;    
+    color: 000000;
+    margin-bottom: 1rem;    
+}
+
+h4{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    color: 000000;
+    margin-bottom: 1rem;    
+}
+h3{
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    color: gray;
+    margin-bottom: 1rem;  
+}
+
+button{
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    color: 000000;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid #000000;
+    padding: 8px 32px 8px 32px; 
+    margin-bottom: 1rem;   
+}
+.cards_container{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cards_container div {
+    display: row;
+    padding: 1.5rem;    
+}
+.cards_container img {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+footer{
+    background-color: #D6B078;
+    height: 350px;
+    overflow: hidden;    
+}
+footer h5{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.elefooter{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 20rem;    
+    color: rgba(255, 255, 255, 0.541);     
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+
+
